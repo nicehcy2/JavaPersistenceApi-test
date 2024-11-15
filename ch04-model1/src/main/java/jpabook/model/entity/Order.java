@@ -9,7 +9,7 @@ import java.util.List;
 
 @Entity
 @Getter
-public class Order {
+public class Order extends BaseEntity {
 
     @Id
     @GeneratedValue

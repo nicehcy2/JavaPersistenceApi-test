@@ -1,7 +1,8 @@
-package jpabook.model.entity;
+package jpabook.model.entity.item;
 
 import jakarta.persistence.*;
 
+import jpabook.model.entity.Category;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,7 +12,9 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
-public class Item {
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "DTYPE") // 구문(판별자) 칼럼
+public abstract class Item {
 
     @Id
     @GeneratedValue

@@ -1,6 +1,7 @@
 package jpabook.model.entity;
 
 import jakarta.persistence.*;
+import jpabook.model.entity.item.Item;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,7 +9,7 @@ import lombok.Setter;
 @Table(name = "ORDER_ITEM")
 @Getter
 @Setter
-public class OrderItem {
+public class OrderItem extends BaseEntity{
 
     @Id
     @GeneratedValue
