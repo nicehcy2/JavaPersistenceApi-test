@@ -43,3 +43,4 @@ bin/
 
 application.yml
 application.properties
+persistence.xml
