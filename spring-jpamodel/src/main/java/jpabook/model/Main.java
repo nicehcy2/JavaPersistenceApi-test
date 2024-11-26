@@ -5,8 +5,10 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 
+/*
 public class Main {
     public static void main(String[] args) {
+
 
         // 엔티티 매니저 팩토리 생성
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook");
@@ -28,5 +30,8 @@ public class Main {
         }
 
         emf.close(); // 엔티티 매니저 팩토리 종료
+
+
     }
 }
+*/
